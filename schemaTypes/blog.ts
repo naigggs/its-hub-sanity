@@ -16,38 +16,11 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'section_1',
-      title: 'S1 Fields',
+      name: 'section1_cards',
+      title: 'Section 1 Cards',
       type: 'array',
-      of: [
-        {
-          type: 'object',
-          fields: [
-            defineField({
-              name: 'heading',
-              title: 'Heading',
-              type: 'string',
-            }),
-            defineField({
-              name: 'subheading',
-              title: 'Subheading',
-              type: 'string',
-            }),
-            defineField({
-              name: 'icon',
-              title: 'Icon',
-              type: 'image',
-            }),
-            defineField({
-                name: 'button',
-                title: 'button',
-                type: 'string',
-              }),
-          ],
-        },
-      ],
-    }),
-    
+      of: [{type: 'reference', to: [{type: 'blogDetails'}]}],
+    }),     
     defineField({
       name: 'date_created',
       title: 'Date Created',

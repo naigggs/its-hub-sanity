@@ -2,8 +2,8 @@ import {defineField, defineType} from 'sanity'
 import { v4 as uuidv4 } from 'uuid';
 
 export default defineType({
-  name: 'jobs',
-  title: 'Jobs',
+  name: 'blogDetails',
+  title: 'Blog Details',
   type: 'document',
   fields: [
     defineField({
@@ -12,11 +12,6 @@ export default defineType({
       type: 'string',
       initialValue: () => uuidv4(),
       readOnly: true,
-    }),
-    defineField({
-      name: 'hero_badge',
-      title: 'Hero Badge',
-      type: 'string',
     }),
     defineField({
       name: 'hero_heading',
