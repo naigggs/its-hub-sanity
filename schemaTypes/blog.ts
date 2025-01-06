@@ -38,6 +38,11 @@ export default defineType({
               title: 'Icon',
               type: 'image',
             }),
+            defineField({
+                name: 'button',
+                title: 'button',
+                type: 'string',
+              }),
           ],
         },
       ],
