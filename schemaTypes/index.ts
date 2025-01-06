@@ -1,5 +1,8 @@
 import blockContent from './blockContent'
-import careers from './careers'
+import blog from './blog'
 import home from './home'
 
+export const schemaTypes = [blockContent, home, blog]
+
 export const schemaTypes = [blockContent, home, careers]
+import careers from './careers'
