@@ -1,10 +1,11 @@
 import blockContent from './blockContent'
-import blog from './blog'
 import home from './home'
 import careers from './careers'
 import jobs from './jobs'
 import about from './about'
+import blogs from './blogs'
+import blogData from './blogData'
 
 
-export const schemaTypes = [blockContent, home, careers, jobs, blog, about]
+export const schemaTypes = [blockContent, home, careers, jobs, blogData, about, blogs]
 
