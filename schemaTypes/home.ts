@@ -254,6 +254,7 @@ export default defineType({
               title: 'Author',
               type: 'string',
             }),
+            
             defineField({
               name: 'position',
               title: 'Position',
