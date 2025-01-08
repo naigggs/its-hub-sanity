@@ -297,7 +297,7 @@ export default defineType({
       options: {
         dateFormat: 'YYYY-MM-DD',
       },
-      initialValue: () => new Date().toISOString(),
+      initialValue: () => new Date().toISOString().split('T')[0],
     })
   ],
   preview: {
