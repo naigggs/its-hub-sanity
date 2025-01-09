@@ -6,5 +6,6 @@ import about from './about'
 import blogs from './blogs'
 import blogData from './blogData'
 import contact from './contact'
+import footer from './footer'
 
-export const schemaTypes = [blockContent, home, careers, jobs, blogData, about, blogs, contact]
+export const schemaTypes = [blockContent, home, careers, jobs, blogData, about, blogs, contact, footer]
