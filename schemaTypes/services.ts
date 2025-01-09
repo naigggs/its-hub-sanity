@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'blogs',
-  title: 'Blogs',
+  name: 'services',
+  title: 'Services',
   type: 'document',
   fields: [
     defineField({
@@ -19,7 +19,7 @@ export default defineType({
       name: 'section1_cards',
       title: 'Section 1 Cards',
       type: 'array',
-      of: [{type: 'reference', to: [{type: 'blogData'}]}],
+      of: [{type: 'reference', to: [{type: 'servicesData'}]}],
     }),     
     defineField({
       name: 'date_created',
