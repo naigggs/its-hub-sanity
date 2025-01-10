@@ -1,5 +1,5 @@
 import {defineField, defineType} from 'sanity'
-import { v4 as uuidv4 } from 'uuid';
+import {v4 as uuidv4} from 'uuid'
 
 export default defineType({
   name: 'jobs',
@@ -12,6 +12,11 @@ export default defineType({
       type: 'string',
       initialValue: () => uuidv4(),
       readOnly: true,
+    }),
+    defineField({
+      name: 'hero_badge',
+      title: 'Hero Badge',
+      type: 'string',
     }),
     defineField({
       name: 'hero_heading',
@@ -40,7 +45,7 @@ export default defineType({
       name: 'job_descriptions',
       title: 'Job Descriptions',
       type: 'array',
-      of: [{ type: 'text' }],
+      of: [{type: 'text'}],
     }),
   ],
   preview: {

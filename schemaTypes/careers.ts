@@ -6,11 +6,6 @@ export default defineType({
     type: 'document',
     fields: [
         defineField({
-            name: 'hero_badge',
-            title: 'Hero Badge',
-            type: 'string',
-        }),
-        defineField({
             name: 'hero_heading',
             title: 'Hero Heading',
             type: 'string',
