@@ -26,18 +26,13 @@ export default defineType({
           type: 'string',
         }),
         defineField({
+          name: 'country1',
+          title: 'Country 1',
+          type: 'string',
+        }),
+        defineField({
           name: 'phone1',
           title: 'Phone Number 1',
-          type: 'string',
-        }),
-        defineField({
-          name: 'phone2',
-          title: 'Phone Number 2',
-          type: 'string',
-        }),
-        defineField({
-          name: 'phone3',
-          title: 'Phone Number 3',
           type: 'string',
         }),
         defineField({
@@ -46,8 +41,28 @@ export default defineType({
           type: 'string',
         }),
         defineField({
+          name: 'country2',
+          title: 'Country 2',
+          type: 'string',
+        }),
+        defineField({
+          name: 'phone2',
+          title: 'Phone Number 2',
+          type: 'string',
+        }),
+        defineField({
           name: 'address2',
           title: 'Address 2',
+          type: 'string',
+        }),
+        defineField({
+          name: 'country3',
+          title: 'Country 3',
+          type: 'string',
+        }),
+        defineField({
+          name: 'phone3',
+          title: 'Phone Number 3',
           type: 'string',
         }),
         defineField({
