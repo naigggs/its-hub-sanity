@@ -6,6 +6,64 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
+      name: 'logo',
+      title: 'Logo',
+      type: 'image',
+    }),
+    defineField({
+      name: 'subheading',
+      title: 'Subheading',
+      type: 'string',
+    }),
+    defineField({
+      name: 'contactInfo',
+      title: 'Contact and Follow Us on',
+      type: 'object',
+      fields: [
+        defineField({
+          name: 'email',
+          title: 'Email',
+          type: 'string',
+        }),
+        defineField({
+          name: 'phone',
+          title: 'Phone',
+          type: 'string',
+        }),
+        defineField({
+          name: 'address',
+          title: 'Address',
+          type: 'string',
+        }),
+        defineField({
+          name: 'facebook',
+          title: 'Facebook',
+          type: 'url',
+        }),
+        defineField({
+          name: 'linkedin',
+          title: 'LinkedIn',
+          type: 'url',
+        }),
+        defineField({
+          name: 'twitter',
+          title: 'Twitter',
+          type: 'url',
+        }),
+      ],
+    }),
+    defineField({
+      name: 'services',
+      title: 'Services',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'servicesData' }] }],
+    }),
+    defineField({
+      name: 'otherServices',
+      title: 'Other Services',
+      type: 'string',
+    }),
+    defineField({
       name: 'images',
       title: 'Images',
       type: 'array',
@@ -34,7 +92,7 @@ export default defineType({
   preview: {
     select: {
       title: 'date_created',
-      media: 'image',
+      media: 'logo',
     },
   },
 });
