@@ -74,6 +74,16 @@ export default defineType({
                       title: 'Description',
                       type: 'text',
                     }),
+                    defineField({
+                      name: 'image_1',
+                      title: 'Image 1',
+                      type: 'image',
+                    }), 
+                    defineField({
+                      name: 'image_2',
+                      title: 'Image 2',
+                      type: 'image',
+                    }), 
                   ],
                 },
               ],

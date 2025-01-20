@@ -62,30 +62,40 @@ export default defineType({
               title: 'Description',
               type: 'text',
             }),
+            defineField({
+              name: 'list',
+              title: 'List',
+              type: 'array',
+              of: [
+                {
+                  type: 'object',
+                  fields: [
+                    defineField({
+                      name: 'title',
+                      title: 'Title',
+                      type: 'string',
+                    }),
+                    defineField({
+                      name: 'description',
+                      title: 'Description',
+                      type: 'text',
+                    }),
+                    defineField({
+                      name: 'image_1',
+                      title: 'Image 1',
+                      type: 'image',
+                    }), 
+                    defineField({
+                      name: 'image_2',
+                      title: 'Image 2',
+                      type: 'image',
+                    }), 
+                  ],
+                },
+              ],
+            }),
           ],
         },
-        defineField({
-          name: 'list',
-          title: 'List',
-          type: 'array',
-          of: [
-            {
-              type: 'object',
-              fields: [
-                defineField({
-                  name: 'title',
-                  title: 'Title',
-                  type: 'string',
-                }),
-                defineField({
-                  name: 'description',
-                  title: 'Description',
-                  type: 'text',
-                }),
-              ],
-            },
-          ],
-        }),
       ],
     }),
     defineField({
