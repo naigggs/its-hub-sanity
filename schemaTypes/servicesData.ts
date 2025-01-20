@@ -39,54 +39,47 @@ export default defineType({
       type: 'text',
     }),
     defineField({
-      name: 'body_title',
-      title: 'Body Title',
-      type: 'object',
-      fields: [
-        defineField({
-          name: 'sections',
-          title: 'Sections',
-          type: 'array',
-          of: [
-            {
-              type: 'object',
-              fields: [
-                defineField({
-                  name: 'title',
-                  title: 'Title',
-                  type: 'string',
-                }),
-                defineField({
-                  name: 'description',
-                  title: 'Description',
-                  type: 'text',
-                }),
-                defineField({
-                  name: 'list',
-                  title: 'List',
-                  type: 'array',
-                  of: [
-                    {
-                      type: 'object',
-                      fields: [
-                        defineField({
-                          name: 'title',
-                          title: 'Title',
-                          type: 'string',
-                        }),
-                        defineField({
-                          name: 'description',
-                          title: 'Description',
-                          type: 'text',
-                        }),
-                      ],
-                    },
+      name: 'body',
+      title: 'Body',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            defineField({
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+            }),
+            defineField({
+              name: 'description',
+              title: 'Description',
+              type: 'text',
+            }),
+            defineField({
+              name: 'list',
+              title: 'List',
+              type: 'array',
+              of: [
+                {
+                  type: 'object',
+                  fields: [
+                    defineField({
+                      name: 'title',
+                      title: 'Title',
+                      type: 'string',
+                    }),
+                    defineField({
+                      name: 'description',
+                      title: 'Description',
+                      type: 'text',
+                    }),
                   ],
-                }),
+                },
               ],
-            },
+            }),
           ],
-        }),
+        },
       ],
     }),
     defineField({

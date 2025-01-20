@@ -15,7 +15,7 @@ export default defineType({
     }),
     defineField({
       name: 'title',
-      title: 'title',
+      title: 'Title',
       type: 'string',
     }),
     defineField({
@@ -64,6 +64,28 @@ export default defineType({
             }),
           ],
         },
+        defineField({
+          name: 'list',
+          title: 'List',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                defineField({
+                  name: 'title',
+                  title: 'Title',
+                  type: 'string',
+                }),
+                defineField({
+                  name: 'description',
+                  title: 'Description',
+                  type: 'text',
+                }),
+              ],
+            },
+          ],
+        }),
       ],
     }),
     defineField({
