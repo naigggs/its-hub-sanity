@@ -37,20 +37,20 @@ export default defineType({
     }),
     defineField({
       name: 'section_1',
-      title: 'S1 Fields',
+      title: 'Section 1 Fields',
       type: 'array',
       of: [
         {
           type: 'object',
           fields: [
             defineField({
-              name: 'heading',
-              title: 'Heading',
+              name: 'title',
+              title: 'Title',
               type: 'string',
             }),
             defineField({
-              name: 'subheading',
-              title: 'Subheading',
+              name: 'subtitle',
+              title: 'Subtitle',
               type: 'string',
             }),
             defineField({
@@ -67,24 +67,26 @@ export default defineType({
       title: 'S1 Button',
       type: 'string',
     }),
+
+
     defineField({
       name: 'section_2_badge',
-      title: 'S2 Badge',
+      title: 'Section 2 Badge',
       type: 'string',
     }),
     defineField({
-      name: 'section_2_heading',
-      title: 'S2 Heading',
+      name: 'section_2_title',
+      title: 'Section 2 Title',
       type: 'string',
     }),
     defineField({
-      name: 'section_2_subheading',
-      title: 'S2 Subheading',
+      name: 'section_2_subtitle',
+      title: 'Section 2 Subtitle',
       type: 'string',
     }),
     defineField({
       name: 'section_2_button',
-      title: 'S2 Button',
+      title: 'Section 2 Button',
       type: 'string',
     }),
     defineField({
@@ -96,13 +98,13 @@ export default defineType({
           type: 'object',
           fields: [
             defineField({
-              name: 'heading',
-              title: 'Heading',
+              name: 'Title',
+              title: '',
               type: 'string',
             }),
             defineField({
-              name: 'subheading',
-              title: 'Subheading',
+              name: 'Subtitle',
+              title: 'Subtitle',
               type: 'string',
             }),
             defineField({
@@ -116,25 +118,25 @@ export default defineType({
     }),
     defineField({
       name: 'section_2_badge_2',
-      title: 'S2 Badge 2',
+      title: 'Section 2 Badge 2',
       type: 'string',
     }),
     defineField({
       name: 'section_2_stats',
-      title: 'S2 Stats',
+      title: 'Section 2 Stats',
       type: 'array',
       of: [
         {
           type: 'object',
           fields: [
             defineField({
-              name: 'heading',
-              title: 'Heading',
+              name: 'title',
+              title: 'Title',
               type: 'string',
             }),
             defineField({
-              name: 'subheading',
-              title: 'Subheading',
+              name: 'subtitle',
+              title: 'Subtitle',
               type: 'string',
             }),
           ],
@@ -142,13 +144,13 @@ export default defineType({
       ],
     }),
     defineField({
-      name: 'section_2_footer_heading',
-      title: 'S2 Footer Heading',
+      name: 'section_2_footer_title',
+      title: 'Section 2 Footer Title',
       type: 'string',
     }),
     defineField({
-      name: 'section_2_footer_subheading',
-      title: 'S2 Footer Subheading',
+      name: 'section_2_footer_subtitle',
+      title: 'Section 2 Footer Subtitle',
       type: 'string',
     }),
     defineField({
@@ -156,27 +158,29 @@ export default defineType({
       title: 'S2 Footer Button',
       type: 'string',
     }),
+
+
     defineField({
       name: 'section_3_image',
-      title: 'S3 Image',
+      title: 'Section 3 Image',
       type: 'image',
     }),
     defineField({
       name: 'section_3_cards',
-      title: 'S3 Cards',
+      title: 'Section 3 Cards',
       type: 'array',
       of: [
         {
           type: 'object',
           fields: [
             defineField({
-              name: 'heading',
-              title: 'Heading',
+              name: 'title',
+              title: 'Title',
               type: 'string',
             }),
             defineField({
-              name: 'subheading',
-              title: 'Subheading',
+              name: 'subtitle',
+              title: 'Subtitle',
               type: 'string',
             }),
             defineField({
@@ -188,57 +192,63 @@ export default defineType({
         },
       ],
     }),
+
+
     defineField({
       name: 'section_4',
-      title: 'S4 Fields',
+      title: 'Section 4 Fields',
       type: 'array',
       of: [
         {
           type: 'object',
           fields: [
             defineField({
-              name: 'heading',
-              title: 'Heading',
+              name: 'title',
+              title: 'Title',
               type: 'string',
             }),
             defineField({
-              name: 'subheading',
-              title: 'Subheading',
+              name: 'subtitle',
+              title: 'Subtitle',
               type: 'string',
             }),
           ],
         },
       ],
     }),
+
+
     defineField({
       name: 'section_5_images',
-      title: 'S5 Images',
+      title: 'Section 5 Images',
       type: 'array',
       of: [{type: 'image'}],
     }),
     defineField({
       name: 'section_5_badge',
-      title: 'S5 Badge',
+      title: 'Section 5 Badge',
       type: 'string',
     }),
     defineField({
-      name: 'section_5_heading',
-      title: 'S5 Heading',
+      name: 'section_5_title',
+      title: 'Section 5 Title',
       type: 'string',
     }),
     defineField({
-      name: 'section_5_subheading',
-      title: 'S5 Subheading',
+      name: 'section_5_subtitle',
+      title: 'Section 5 Subtitle',
       type: 'string',
     }),
     defineField({
       name: 'section_5_button',
-      title: 'S5 Button',
+      title: 'Section 5 Button',
       type: 'string',
     }),
+
+
     defineField({
       name: 'section_6_testimonials',
-      title: 'S6 Testimonials',
+      title: 'Section 6 Testimonials',
       type: 'array',
       of: [
         {
@@ -264,32 +274,36 @@ export default defineType({
         },
       ],
     }),
+
+
     defineField({
         name: 'section_7_image',
-        title: 'S7 Image',
+        title: 'Section 7 Image',
         type: 'image',
     }),
     defineField({
-        name: 'section_7_heading',
-        title: 'S7 Heading',
+        name: 'section_7_title',
+        title: 'Section 7 Title',
         type: 'string',
     }),
     defineField({
-        name: 'section_7_subheadings',
-        title: 'S7 Subheadings',
+        name: 'section_7_subtitle',
+        title: 'Section 7 Subtitle',
         type: 'array',
         of: [{ type: 'string' }],
     }),
     defineField({
         name: 'section_7_button_1',
-        title: 'S7 Button 1',
+        title: 'Section 7 Button 1',
         type: 'string',
     }),
     defineField({
         name: 'section_7_button_2',
-        title: 'S7 Button 2',
+        title: 'Section 7 Button 2',
         type: 'string',
     }),
+
+
     defineField({
       name: 'date_created',
       title: 'Date Created',

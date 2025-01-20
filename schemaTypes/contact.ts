@@ -21,42 +21,42 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'card1_title',
+      name: 'card_1_title',
       title: 'Card 1 Title',
       type: 'string',
     }),
     defineField({
-      name: 'card2_image',
+      name: 'card_2_image',
       title: 'Card 2 Image',
       type: 'image',
     }),
     defineField({
-      name: 'section2_title',
+      name: 'section_2_title',
       title: 'Section 2 Title',
       type: 'string',
     }),
     defineField({
-      name: 'section2_subtitle',
+      name: 'section_2_subtitle',
       title: 'Section 2 Subtitle',
       type: 'string',
     }),
     defineField({
-      name: 'section2_image1',
+      name: 'section_2_image1',
       title: 'Section 2 Image 1',
       type: 'image',
     }),
     defineField({
-      name: 'section2_image2',
+      name: 'section_2_image2',
       title: 'Section 2 Image 2',
       type: 'image',
     }),
     defineField({
-      name: 'section2_image3',
+      name: 'section_2_image3',
       title: 'Section 2 Image 3',
       type: 'image',
     }),
     defineField({
-      name: 'section2_steps',
+      name: 'section_2_steps',
       title: 'Section 2 Steps',
       type: 'array',
       of: [

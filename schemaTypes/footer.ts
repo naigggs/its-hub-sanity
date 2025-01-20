@@ -11,13 +11,13 @@ export default defineType({
       type: 'image',
     }),
     defineField({
-      name: 'subheading',
-      title: 'Subheading',
+      name: 'subtitle',
+      title: 'Subtitle',
       type: 'string',
     }),
     defineField({
-      name: 'contactInfo',
-      title: 'Contact and Follow Us on',
+      name: 'contact_info',
+      title: 'Contact Info',
       type: 'object',
       fields: [
         defineField({
@@ -26,47 +26,47 @@ export default defineType({
           type: 'string',
         }),
         defineField({
-          name: 'country1',
+          name: 'country_1',
           title: 'Country 1',
           type: 'string',
         }),
         defineField({
-          name: 'phone1',
+          name: 'phone_1',
           title: 'Phone Number 1',
           type: 'string',
         }),
         defineField({
-          name: 'address1',
+          name: 'address_1',
           title: 'Address 1',
           type: 'string',
         }),
         defineField({
-          name: 'country2',
+          name: 'country_2',
           title: 'Country 2',
           type: 'string',
         }),
         defineField({
-          name: 'phone2',
+          name: 'phone_2',
           title: 'Phone Number 2',
           type: 'string',
         }),
         defineField({
-          name: 'address2',
+          name: 'address_2',
           title: 'Address 2',
           type: 'string',
         }),
         defineField({
-          name: 'country3',
+          name: 'country_3',
           title: 'Country 3',
           type: 'string',
         }),
         defineField({
-          name: 'phone3',
+          name: 'phone_3',
           title: 'Phone Number 3',
           type: 'string',
         }),
         defineField({
-          name: 'address3',
+          name: 'address_3',
           title: 'Address 3',
           type: 'string',
         }),
@@ -94,7 +94,7 @@ export default defineType({
       of: [{ type: 'reference', to: [{ type: 'servicesData' }] }],
     }),
     defineField({
-      name: 'otherServices',
+      name: 'other_services',
       title: 'Other Services',
       type: 'string',
     }),
