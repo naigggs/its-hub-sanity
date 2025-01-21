@@ -96,7 +96,8 @@ export default defineType({
     defineField({
       name: 'other_services',
       title: 'Other Services',
-      type: 'string',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'servicesData' }] }],
     }),
     defineField({
       name: 'images',
