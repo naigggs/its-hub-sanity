@@ -88,12 +88,6 @@ export default defineType({
       ],
     }),
     defineField({
-      name: 'services',
-      title: 'Services',
-      type: 'array',
-      of: [{ type: 'reference', to: [{ type: 'servicesData' }] }],
-    }),
-    defineField({
       name: 'other_services',
       title: 'Other Services',
       type: 'array',
@@ -129,16 +123,6 @@ export default defineType({
         dateFormat: 'YYYY-MM-DD',
       },
       initialValue: () => new Date().toISOString().split('T')[0],
-    }),
-    defineField({
-      name: 'link',
-      title: 'Link',
-      type: 'url',
-    }),
-    defineField({
-      name: 'link_name',
-      title: 'Link Name',
-      type: 'string',
     }),
   ],
   preview: {
