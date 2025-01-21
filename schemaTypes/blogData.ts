@@ -14,13 +14,13 @@ export default defineType({
       readOnly: true,
     }),
     defineField({
-      name: 'heading',
-      title: 'Heading',
+      name: 'title',
+      title: 'Title',
       type: 'string',
     }),
     defineField({
-      name: 'subheading',
-      title: 'Subheading',
+      name: 'subtitle',
+      title: 'Subtitle',
       type: 'string',
     }),
     defineField({
@@ -35,31 +35,46 @@ export default defineType({
       of: [{type: 'string'}],
     }),
     defineField({
-      name: 'introTitle',
-      title: 'Intro Title',
+      name: 'introduction_title',
+      title: 'Introduction Title',
       type: 'string',
     }),
     defineField({
-      name: 'introDescription',
-      title: 'Intro Description',
+      name: 'introduction_description',
+      title: 'Introduction Description',
       type: 'text',
     }),
     defineField({
-      name: 'bodyTitle',
-      title: 'Body Title',
-      type: 'object',
-      fields: [
+      name: 'body',
+      title: 'Body',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            defineField({
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+            }),
+            defineField({
+              name: 'description',
+              title: 'Description',
+              type: 'text',
+            }),
+          ],
+        },
         defineField({
-          name: 'sections',
-          title: 'Sections',
+          name: 'list',
+          title: 'List',
           type: 'array',
           of: [
             {
               type: 'object',
               fields: [
                 defineField({
-                  name: 'miniTitle',
-                  title: 'Mini Title',
+                  name: 'title',
+                  title: 'Title',
                   type: 'string',
                 }),
                 defineField({
@@ -112,12 +127,12 @@ export default defineType({
       ],
     }),
     defineField({
-      name: 'conclusionTitle',
+      name: 'conclusion_title',
       title: 'Conclusion Title',
       type: 'string',
     }),
     defineField({
-      name: 'conclusionDescription',
+      name: 'conclusion_description',
       title: 'Conclusion Description',
       type: 'text',
     }),

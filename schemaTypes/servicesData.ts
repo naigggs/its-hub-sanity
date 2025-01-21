@@ -14,13 +14,13 @@ export default defineType({
       readOnly: true,
     }),
     defineField({
-      name: 'heading',
-      title: 'Heading',
+      name: 'title',
+      title: 'Title',
       type: 'string',
     }),
     defineField({
-      name: 'subheading',
-      title: 'Subheading',
+      name: 'subtitle',
+      title: 'Subtitle',
       type: 'string',
     }),
     defineField({
@@ -29,52 +29,67 @@ export default defineType({
       type: 'image',
     }),
     defineField({
-      name: 'introTitle',
-      title: 'Intro Title',
+      name: 'introduction_title',
+      title: 'Introduction Title',
       type: 'string',
     }),
     defineField({
-      name: 'introDescription',
-      title: 'Intro Description',
+      name: 'introduction_description',
+      title: 'Introduction Description',
       type: 'text',
     }),
     defineField({
-      name: 'bodyTitle',
-      title: 'Body Title',
-      type: 'object',
-      fields: [
-        defineField({
-          name: 'sections',
-          title: 'Sections',
-          type: 'array',
-          of: [
-            {
-              type: 'object',
-              fields: [
-                defineField({
-                  name: 'miniTitle',
-                  title: 'Mini Title',
-                  type: 'string',
-                }),
-                defineField({
-                  name: 'description',
-                  title: 'Description',
-                  type: 'text',
-                }),
+      name: 'body',
+      title: 'Body',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            defineField({
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+            }),
+            defineField({
+              name: 'description',
+              title: 'Description',
+              type: 'text',
+            }),
+            defineField({
+              name: 'list',
+              title: 'List',
+              type: 'array',
+              of: [
+                {
+                  type: 'object',
+                  fields: [
+                    defineField({
+                      name: 'title',
+                      title: 'Title',
+                      type: 'string',
+                    }),
+                    defineField({
+                      name: 'description',
+                      title: 'Description',
+                      type: 'text',
+                    }),
+                  ],
+                },
               ],
-            },
+            }),
           ],
-        }),
+        },
       ],
     }),
     defineField({
-      name: 'collabTitle',
-      title: 'Collab Title',
+      name: 'collaboration_title',
+      title: 'Collaboration Title',
       type: 'string',
     }),
     defineField({
-      name: 'collabDescription',
-      title: 'Collab Description',
+      name: 'collaboration_description',
+      title: 'Collaboration Description',
       type: 'text',
     }),
   ],
