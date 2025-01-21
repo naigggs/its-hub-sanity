@@ -96,7 +96,24 @@ export default defineType({
     defineField({
       name: 'other_services',
       title: 'Other Services',
-      type: 'string',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            defineField({
+              name: 'name',
+              title: 'Name',
+              type: 'string',
+            }),
+            defineField({
+              name: 'link',
+              title: 'Link',
+              type: 'url',
+            }),
+          ],
+        },
+      ],
     }),
     defineField({
       name: 'images',
