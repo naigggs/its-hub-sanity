@@ -97,66 +97,6 @@ export default defineType({
             }),
           ],
         },
-        defineField({
-          name: 'list',
-          title: 'List',
-          type: 'array',
-          of: [
-            {
-              type: 'object',
-              fields: [
-                defineField({
-                  name: 'title',
-                  title: 'Title',
-                  type: 'string',
-                }),
-                defineField({
-                  name: 'description',
-                  title: 'Description',
-                  type: 'text',
-                }),
-              ],
-            },{
-              type: 'object',
-              fields: [
-                defineField({
-                  name: 'miniTitle',
-                  title: 'Mini Title',
-                  type: 'string',
-                }),
-                defineField({
-                  name: 'description',
-                  title: 'Description',
-                  type: 'object',
-                  fields: [
-                    defineField({
-                      name: 'text',
-                      title: 'Text',
-                      type: 'text',
-                    }),
-                    defineField({
-                      name: 'list',
-                      title: 'List',
-                      type: 'array',
-                      of: [
-                        {
-                          type: 'object',
-                          fields: [
-                            defineField({
-                              name: 'item',
-                              title: 'Item',
-                              type: 'string',
-                            }),
-                          ],
-                        },
-                      ],
-                    }),
-                  ],
-                }),
-              ],
-            },
-          ],
-        }),
       ],
     }),
     defineField({
