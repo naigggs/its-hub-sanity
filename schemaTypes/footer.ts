@@ -52,7 +52,7 @@ export default defineType({
         }),
         defineField({
           name: 'address_2',
-          title: 'Address 2',
+          title: 'Adwdress 2',
           type: 'string',
         }),
         defineField({
@@ -83,6 +83,11 @@ export default defineType({
         defineField({
           name: 'twitter',
           title: 'Twitter',
+          type: 'url',
+        }),
+        defineField({
+          name: 'instagram',
+          title: 'Instagram',
           type: 'url',
         }),
       ],
