@@ -54,7 +54,8 @@ export default defineType({
             defineField({
               name: 'description',
               title: 'Description',
-              type: 'text',
+              type: 'array',
+              of: [{type: 'text'}],
             }),
             defineField({
               name: 'list',
@@ -72,7 +73,18 @@ export default defineType({
                     defineField({
                       name: 'description',
                       title: 'Description',
-                      type: 'text',
+                      type: 'array',
+                      of: [{type: 'text'}],
+                    }),
+                    defineField({
+                      name: 'image_1',
+                      title: 'Image 1',
+                      type: 'image',
+                    }),
+                    defineField({
+                      name: 'image_2',
+                      title: 'Image 2',
+                      type: 'image',
                     }),
                   ],
                 },
